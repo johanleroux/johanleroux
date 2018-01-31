@@ -17,11 +17,17 @@
         <div class="flex border-b-2 border-grey-light py-6 w-full nav">
             <a href="/" class="flex ml-4">
                 <svg width="64" height="64" class="flex-inline">
+                    <path fill="none" d="M-1-1h55.333v55.333H-1z" />
                     <g>
-                        <circle fill="white" r="32" cy="32" cx="32"/>
-                        <path d="m32,64a32,32 0 1 1 0,-64a32,32 0 0 1 0,64zm0,-2a30,30 0 1 0 0,-60a30,30 0 0 0 0,60z" fill="#A9A598"/>
+                        <circle fill="#fff" r="32" cy="32" cx="32" />
+                        <path fill="#A9A598" d="M32 64a32 32 0 1 1 0-64 32 32 0 0 1 0 64zm0-2a30 30 0 1 0 0-60 30 30 0 0 0 0 60z"
+                        />
+                        <g stroke-linecap="round" fill-rule="evenodd" font-size="12" stroke="#39362f" stroke-width=".945"
+                            fill="#39362f">
+                            <path d="M37.457 38.884V13.982h6.152V38.91q0 5.102-3.186 8.105t-8.411 3.003q-5.566 0-8.593-2.807-3.028-2.808-3.028-7.813h6.153q0 2.832 1.403 4.26 1.404 1.43 4.065 1.43 2.491 0 3.968-1.649 1.477-1.648 1.477-4.554z"
+                            />
+                        </g>
                     </g>
-                    <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'League Gothic', sans-serif" font-size="44" id="svg_5" y="47" x="19.79168" stroke-width="0" stroke="#000" fill="#39362f">J</text>
                 </svg>
             </a>
             <div class="flex flex-grow justify-end">

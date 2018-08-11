@@ -39,10 +39,12 @@
                     </g>
                 </svg>
             </a>
+            {{--
             <div class="flex flex-grow justify-end">
                 <a href="{{ url('/') }}" class="px-2 sm:px-4 md:px-6 py-4 no-underline uppercase leading-loose tracking-wide text-sm sm:text-base text-grey-darkest hover:text-grey-dark">Home</a>
                 <a href="{{ url('/tips') }}" class="px-2 sm:px-4 md:px-6 py-4 no-underline uppercase leading-loose tracking-wide text-sm sm:text-base text-grey-darkest hover:text-grey-dark">Tips / Tricks</a>
             </div>
+           --}}
         </div>
     </header>
 

@@ -9,7 +9,7 @@ class TailwindExtractor {
     }
   }
   
-mix.postCss('resources/assets/css/app.css', 'public/css', [
+mix.postCss('resources/css/app.css', 'public/css', [
     tailwindcss('tailwind.js'),
 ]);
 

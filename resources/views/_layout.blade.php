@@ -40,7 +40,7 @@
             </a>
             <div class="flex flex-grow justify-end">
                 <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/') }}">About</a>
-                <!-- <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/tips') }}">Tips / Tricks</a> -->
+                <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/projects') }}">Projects</a>
             </div>
         </div>
     </header>

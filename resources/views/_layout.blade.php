@@ -31,15 +31,15 @@
     <title>Johan le Roux</title>
 </head>
 
-<body class="bg-grey-lightest pb-12 border-t-2 border-blue">
-    <header class="container mx-auto pb-6">
-        <div class="flex border-b-2 border-grey-light py-6 w-full nav">
-            <a href="/" class="flex ml-4">
-                <svg width="64" height="64" class="flex-inline">
+<body class="font-sans bg-blue-lightest pb-12 border-t-2 border-blue">
+    <header class="bg-white mb-8 shadow">
+        <div class="container mx-auto flex  py-3 w-full nav">
+            <a href="/" class="flex ml-4 py-3 md:py-4 no-underline leading-loose tracking-wide text-base text-grey-darkest hover:text-blue hover:underline">
+                <svg width="64" height="64" class="flex-inline -my-4 fill-current">
                     <path fill="none" d="M-1-1h55.333v55.333H-1z" />
                     <g>
                         <circle fill="#fff" r="32" cy="32" cx="32" />
-                        <path fill="#A9A598" d="M32 64a32 32 0 1 1 0-64 32 32 0 0 1 0 64zm0-2a30 30 0 1 0 0-60 30 30 0 0 0 0 60z"
+                        <path fill="fill-current" d="M32 64a32 32 0 1 1 0-64 32 32 0 0 1 0 64zm0-2a30 30 0 1 0 0-60 30 30 0 0 0 0 60z"
                         />
                         <g stroke-linecap="round" fill-rule="evenodd" font-size="12" stroke="#39362f" stroke-width=".945"
                             fill="#39362f">
@@ -48,13 +48,12 @@
                         </g>
                     </g>
                 </svg>
+                &nbsp;ohan le Roux
             </a>
-            {{--
             <div class="flex flex-grow justify-end">
-                <a href="{{ url('/') }}" class="px-2 sm:px-4 md:px-6 py-4 no-underline uppercase leading-loose tracking-wide text-sm sm:text-base text-grey-darkest hover:text-grey-dark">Home</a>
-                <a href="{{ url('/tips') }}" class="px-2 sm:px-4 md:px-6 py-4 no-underline uppercase leading-loose tracking-wide text-sm sm:text-base text-grey-darkest hover:text-grey-dark">Tips / Tricks</a>
+                <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/') }}">About</a>
+                <!-- <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/tips') }}">Tips / Tricks</a> -->
             </div>
-           --}}
         </div>
     </header>
 
@@ -62,13 +61,11 @@
         @yield('content')
     </div>
 
-    <footer class="container mx-auto pt-8">
-        <div class="flex px-4 border-t border-grey-light">
-            <p class="flex-1 text-sm py-4 text-grey tracking-wide uppercase text-right">© Johan le Roux, {{ now()->year }}</p>
+    <footer class="bg-white mt-8 shadow">
+        <div class="w-full mx-auto p-3">
+            <p class="flex-1 text-sm py-4 text-grey-dark tracking-wide uppercase text-right">© Johan le Roux, {{ now()->year }}</p>
         </div>
     </footer>
-
-    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>

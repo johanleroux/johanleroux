@@ -24,31 +24,48 @@
     </div>
 </div>
 
-<div class="w-full p-8 bg-white shadow font-light text-grey-darkest leading-loose">
-    <h4 class="text-2xl mb-3 font-normal leading-none">About Me</h4>
-    <p class="mb-4">Currently a full time student finishing my Bachelor of Science Honours degree in Information Technology at the University of Johannesburg, South Africa.</p>
-    <p class="mb-8">I have an absolute love and passion for technology and engineering; from a young age I was busy taking apart electronics and figuring out what makes them tick; building hundreds of computers and (sadly) breaking even more.</p>
+<div class="block md:flex -mx-2">
+    <div class="flex-1 mb-4 mx-2 p-8 bg-white shadow font-light text-grey-darkest leading-loose">
+        <h4 class="text-2xl mb-3 font-normal leading-none">HireX</h4>
+        <p class="mb-4">POS Based Rental Management system developed as a backend for any company that wants to manage, track and rent-out any product.</p>
+        <p class="mb-4">Equipped with authentication, roles, customer &amp; product management, violations, order &amp; invoice creation with PDF, customer deposits and statements, time-tracking, history logs and financial reports.</p>
 
-    <h4 class="text-2xl mb-3 font-normal leading-none">Toolbelt</h4>
-    <p class="mb-4">I am a quick learner and have dabbled in many different languages and technologies over the years.</p>
-    
-    <p>Proficient languages:</p>
-    <ul class="mb-4">
-        <li>PHP (Laravel Framework)</li>
-        <li>Javascript (ES6 | VueJS Framework)</li>
-        <li>NodeJS (Electron)</li>
-        <li>C++ &amp; Rust</li>
-        <li>C# &amp; Java</li>
-        <li>Python</li>
-    </ul>
-    
-    <p>Technology Stack:</p>
-    <ul class="mb-4">
-        <li>Git</li>
-        <li>Amazon AWS</li>
-        <li>DigitalOcean &amp; Linode &amp; Vultr</li>
-    </ul>
-    
-    <p class="font-normal">What to hire me? Send me a <a class="text-grey-darkest underline hover:text-blue" href="mailto:mail@johanleroux.me">email</a>.</p>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Laravel</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">VueJS</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">MySQL</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">jQuery</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">NodeJS</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">NoSQL</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Electron</span>
+    </div>
+    <div class="flex-1 mb-4 mx-2 p-8 bg-white shadow font-light text-grey-darkest leading-loose">
+        <h4 class="text-2xl mb-3 font-normal leading-none">Apollo</h4>
+        <p class="mb-4">University Group Project that was built as an inventory management system which can track sales and delivery; and have forecasting which can determine any trends in the market place.</p>
+
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Laravel</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">VueJS</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">MySQL</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">jQuery</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Java</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">R</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Python</span>
+    </div>
+</div>
+<div class="block md:flex -mx-2">
+    <div class="flex-1 mb-4 mx-2 p-8 bg-white shadow font-light text-grey-darkest leading-loose">
+        <h4 class="text-2xl mb-3 font-normal leading-none">Lomejo</h4>
+        <p class="mb-4">Website showcasing a breeder selling Bull Terriers, with a gallery and contact section. </p>
+
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Laravel</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">VueJS</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">MySQL</span>
+    </div>
+    <div class="flex-1 mb-4 mx-2 p-8 bg-white shadow font-light text-grey-darkest leading-loose">
+        <h4 class="text-2xl mb-3 font-normal leading-none">Phumangeni</h4>
+        <p class="mb-4">UWebsite showcasing a beautiful thatched cottage situated in Marloth Park near the Kruger National Park; includes a gallery and contact section.</p>
+
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">Laravel</span>
+        <span class="inline-block bg-blue-lightest text-sm px-1 mr-2 mb-2 rounded">VueJS</span>
+    </div>
 </div>
 @endsection

@@ -16,17 +16,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125555759-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-125555759-1');
-    </script>
+    <link async rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <title>Johan le Roux</title>
 </head>

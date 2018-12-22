@@ -20,6 +20,7 @@
         "laravel-mix-purgecss": "^1.0.4",
         "lodash": "^4.17.4",
         "tailwindcss": "^0.4.0",
+        "prettier": "^1.10.2",
         "purgecss-webpack-plugin": "^1.4.0",
         "vue": "^2.5.7",
         "vue-input-tag": "^1.0.0",

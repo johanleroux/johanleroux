@@ -33,6 +33,7 @@
             <div class="flex flex-grow justify-end">
                 <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/') }}">About</a>
                 <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/projects') }}">Projects</a>
+                <a class="px-2 md:px-3 py-4 no-underline font-normal leading-loose text-sm sm:text-base text-grey-darkest hover:text-blue" href="{{ url('/blog') }}">Blog</a>
             </div>
         </div>
     </header>
@@ -42,8 +43,11 @@
     </div>
 
     <footer class="bg-white mt-8 shadow">
-        <div class="w-full mx-auto p-3">
-            <p class="flex-1 text-sm py-4 text-grey-dark tracking-wide uppercase text-right">© Johan le Roux, {{ now()->year }}</p>
+        <div class="container flex mx-auto p-3">
+            <p class="flex-1 py-4 text-center no-underline font-normal leading-loose text-sm text-grey-darkest">
+                <span>© Johan le Roux</span> 
+                <a class="ml-4 flex-1 py-4 no-underline font-normal leading-loose text-sm text-grey-darkest hover:text-blue" href="{{ url('/rss') }}">RSS</a>
+            </p>
         </div>
     </footer>
 </body>

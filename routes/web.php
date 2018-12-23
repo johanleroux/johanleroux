@@ -2,6 +2,7 @@
 
 use App\Post;
 use Spatie\Tags\Tag;
+use Illuminate\Support\Facades\DB;
 
 Route::view('/', 'home');
 
@@ -18,7 +19,14 @@ Route::get('/blog/{tag?}', function($tag = null) {
                 ->orderBy('id', 'desc')
                 ->get();
     
-    $tags = Tag::get();
+    $fetchTags = DB::table('taggables')
+                ->select('tag_id', DB::raw('COUNT(tag_id) as tag_used'))
+                ->orderBy('tag_used', 'DESC')
+                ->groupBy('tag_id')
+                ->limit(5)
+                ->pluck('tag_id');
+                
+    $tags = Tag::whereIn('id', $fetchTags)->get();
     
     return view('blog', compact('posts', 'tags'));
 });

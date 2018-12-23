@@ -53,14 +53,14 @@ class Post extends Resource
                     return str_limit($title, 50);
                 }),
             
-            Markdown::make('Text')
-                ->rules('required')
-                ->hideFromIndex(),
-            
             Tags::make('Tags'),
         
             DateTime::make('Published At')
                 ->sortable(),
+            
+            Markdown::make('Text')
+                ->rules('required')
+                ->hideFromIndex(),
 
             Text::make('', function () {
                 if (! $this->exists) {

@@ -16,6 +16,8 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    @include('feed::links')
+
     <link async rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <title>Johan le Roux</title>

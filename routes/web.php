@@ -10,8 +10,7 @@ Route::view('/projects', 'projects');
 Route::get('/blog/{tag?}', function($tag = null) {
     $tag = Tag::where('slug->en', $tag)->first();
 
-    $posts = Post::whereNotNull('published_at')
-                ->where('published_at', '<=', now())
+    $posts = Post::published()
                 ->when($tag, function ($query, $tag) {
                     $query->withAllTags([$tag]);
                 })
@@ -25,9 +24,10 @@ Route::get('/blog/{tag?}', function($tag = null) {
 });
 
 Route::get('/post/{post}', function($post) {
-    $post = Post::whereNotNull('published_at')
-                ->where('published_at', '<=', now())
+    $post = Post::published()
                 ->where('slug', $post)->firstOrFail();
 
     return view('post', compact('post'));
 });
+
+Route::feeds();

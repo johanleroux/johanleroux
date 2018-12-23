@@ -47,8 +47,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "./nova"
+            "type": "vcs",
+            "url": "git@github.com:johanleroux/laravel-nova.git"
         }
     ],
     "scripts": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19a9378079a9363877259537333e7d9e",
+    "content-hash": "282891bc82513ed99383620732a17653",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -899,12 +899,17 @@
         },
         {
             "name": "laravel/nova",
-            "version": "dev-master",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:johanleroux/laravel-nova.git",
+                "reference": "9c305dfdd87734259aaaee65fb7674d2974956c8"
+            },
             "dist": {
-                "type": "path",
-                "url": "./nova",
-                "reference": "6b34fd3882e3cff2dc99d288393e92025bc93094",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/johanleroux/laravel-nova/zipball/9c305dfdd87734259aaaee65fb7674d2974956c8",
+                "reference": "9c305dfdd87734259aaaee65fb7674d2974956c8",
+                "shasum": ""
             },
             "require": {
                 "cakephp/chronos": "~1.0",
@@ -958,7 +963,12 @@
             "keywords": [
                 "admin",
                 "laravel"
-            ]
+            ],
+            "support": {
+                "source": "https://github.com/johanleroux/laravel-nova/tree/v1.2.1",
+                "issues": "https://github.com/johanleroux/laravel-nova/issues"
+            },
+            "time": "2018-12-23T19:45:46+00:00"
         },
         {
             "name": "laravel/slack-notification-channel",

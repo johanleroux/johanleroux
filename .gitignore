@@ -1,15 +1,6 @@
-/node_modules
-/public/hot
-/public/storage
-/public/js
-/public/css
-/public/mix-manifest.json
-/storage/*.key
-/vendor
-/.idea
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-.env
+# Ignore these so they're not stored in source control
+.vscode
+/node_modules/
+package-lock.json
+/build.css
+/tmp/

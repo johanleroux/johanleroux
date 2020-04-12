@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  web:
+    hostname: web
+    domainname: docker
+    container_name: ${COMPOSE_PROJECT_NAME}.web
+    restart: always
+    image: ${REPO}/${COMPOSE_PROJECT_NAME}/web:${TAG}
+    ports:
+      - "3100:80"
+    healthcheck:
+        test: ["CMD", "curl", "-v", "localhost/nginx_status"]
+        start_period: 30s
+        interval: 10s
+        timeout: 10s
+        retries: 10

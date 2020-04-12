@@ -1,0 +1,6 @@
+version: "3.5"
+services:
+  web:
+    build:
+      context: .
+    image: ${REPO}/${COMPOSE_PROJECT_NAME}/web:${TAG}

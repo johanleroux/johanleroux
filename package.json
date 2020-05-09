@@ -1,7 +1,7 @@
 {
   "name": "johanleroux.me",
   "version": "1.0.0",
-  "author": "Johan le Roux <mail@johanleroux.me>",
+  "author": "Johan le Roux <jleroux99@gmail.com>",
   "scripts": {
     "serve": "concurrently \"postcss ./tailwind.css -o ./build.css --watch\"  \"live-server \"",
     "build": "cross-env NODE_ENV=build postcss ./tailwind.css -o ./build.css",

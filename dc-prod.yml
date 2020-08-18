@@ -6,11 +6,18 @@ services:
     container_name: ${COMPOSE_PROJECT_NAME}.web
     restart: always
     image: ${REPO}/${COMPOSE_PROJECT_NAME}/web:${TAG}
-    ports:
-      - "3100:80"
     healthcheck:
-        test: ["CMD", "curl", "-v", "localhost/nginx_status"]
+        test: ["CMD", "curl", "-v", "localhost"]
         start_period: 30s
         interval: 10s
         timeout: 10s
         retries: 10
+    environment:
+      - VIRTUAL_HOST=johanleroux.me
+      - LETSENCRYPT_HOST=johanleroux.me
+    networks:
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true

@@ -13,8 +13,8 @@ services:
         timeout: 10s
         retries: 10
     environment:
-      - VIRTUAL_HOST=johanleroux.me
-      - LETSENCRYPT_HOST=johanleroux.me
+      - VIRTUAL_HOST=johanleroux.me,www.johanleroux.me
+      - LETSENCRYPT_HOST=johanleroux.me,www.johanleroux.me
     networks:
       - nginx-proxy
 
